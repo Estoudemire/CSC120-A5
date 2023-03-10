@@ -33,4 +33,17 @@ public class Engine {
     public double getCurrentFuel (){
         return currentFuel; 
     }
+
+    //Methods
+    public void refuel (){
+        currentFuel = maxFuel; 
+    }
+    public void go (){
+        if (currentFuel > 0){
+            currentFuel = currentFuel - 10; 
+            System.out.println("Going! Fuel left: " + currentFuel); 
+        } else {
+            System.out.print("Out of Fuel!"); 
+        }
+    }
 }
