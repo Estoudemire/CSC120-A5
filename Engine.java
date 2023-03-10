@@ -43,7 +43,7 @@ public class Engine {
             currentFuel = currentFuel - 10; 
             System.out.println("Going! Fuel left: " + currentFuel); 
         } else {
-            System.out.print("Out of Fuel!"); 
+            throw new RuntimeException("Out of Fuel"); 
         }
     }
 }
